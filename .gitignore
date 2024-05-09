@@ -23,6 +23,7 @@ coverage/
 .tmp/
 temp/
 out/
+.csv/
 
 # Arquivos de configuração e credenciais
 .env
