@@ -132,7 +132,7 @@ async function convertAndSave(array) {
   const csvData = arrayParaCSV(array);
   
   try {
-    writeFileSync('resultado.csv', csvData, 'utf8');
+    writeFileSync('repositoriesWithoutTemplate.csv', csvData, 'utf8');
     console.log('Arquivo CSV salvo com sucesso!');
   } catch (err) {
     console.error('Erro ao salvar o arquivo:', err);
