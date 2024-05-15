@@ -8,6 +8,7 @@ The `getRepositoriesWithoutTemplate` function works by querying specific endpoin
 
 ## Setup
 1. Clone this repository
+2. You MUST have node.js installed on your machine in version 20^. If you don't have it, you can download it [here](https://nodejs.org/en/download/)
 2. Install the dependencies by running `npm install`
 3. Create a `.env` file in the root directory of the project and add the same variables as the `.env.example` file
 

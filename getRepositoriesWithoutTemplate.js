@@ -13,6 +13,10 @@ const lastYear = new Date();
 lastYear.setFullYear(lastYear.getFullYear() - 1);
 const lastYearISO = lastYear.toISOString();
 
+const lastThreeMonths = new Date();
+lastThreeMonths.setMonth(lastThreeMonths.getMonth() - 3);
+const lastThreeMonthsISO = lastThreeMonths.toISOString();
+
 const octokit = new Octokit({ 
   auth: GITHUB_TOKEN,
 });
@@ -46,7 +50,7 @@ async function getCommitsOrActivities(repoName) {
         'X-GitHub-Api-Version': '2022-11-28'
       },
       per_page: 1,
-      since: lastYearISO,
+      since: lastThreeMonthsISO,
     })
   
     if (commits.data.length > 0) {
