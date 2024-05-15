@@ -1,10 +1,12 @@
-# Find Repositories Without Template in an Organization
+# Find Repositories Without a pull_request_template.md in an Organization
 
 This JavaScript file contains the script `getRepositoriesWithoutTemplate`, which is designed to fetch repositories that do not use a specific template.
 
 ## Functionality
-
 The `getRepositoriesWithoutTemplate` function works by querying specific endpoints on gitHubAPI, filtering the results to exclude repositories that use a pull_request_template.md file. This is useful for scenarios where you want to analyze and improve Pull Request documentation on your organization.
+
+## Requirements
+node 16 or superior
 
 ## Setup
 1. Clone this repository
